@@ -3,11 +3,14 @@ import { UserProfile } from "../types/userProfile"
 
 type Props = {
     user: UserProfile;
+    // 型を呼び出す
 };
 
 export const UserCard: VFC<Props> = (props) => {
+  // 型を確認
     const { user } = props;
-
+    // 渡されたpropsの値からuserを取り出す
+    
     const style = {
       border: "solid 1px #ccc",
       borderRadius: "8px",

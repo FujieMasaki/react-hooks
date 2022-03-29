@@ -21,6 +21,7 @@ export default function App() {
       ) : (
         <>
       {userProfiles.map((user)=>(
+        // userAllUsersで更新されたuserProfileがレンダリングされる
         <UserCard key={user.id} user={user} />
         ))}
         </>
